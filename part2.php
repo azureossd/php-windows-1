@@ -12,15 +12,15 @@ $modules = [
 foreach($modules as $module) {
     if(!extension_loaded($module)) {
         if($module == "ldap") {
-            echo "LDAP APPLICATION ERROR #1404 LDAP Extension Not Loaded. </ br>";
+            echo "LDAP APPLICATION ERROR #1404 LDAP Extension Not Loaded. </br></br>";
         } else if ($module == "mongodb") {
-            echo "LDAP extension has been installed, you are ready to go! </ br>";
+            echo "LDAP extension has been installed, you are ready to go! </br></br>";
         }
     } else {
         if($module == "ldap") {
-            echo "PHP Error: Class 'MongoDB\Client' not found </ br>";
+            echo "PHP Error: Class 'MongoDB\Client' not found </br></br>";
         } else if ($module == "mongodb") {
-            echo "Mongodb extension has been installed, find it from installed extensions, you are ready to go! </ br>";
+            echo "Mongodb extension has been installed, find it from installed extensions, you are ready to go! </br></br>";
         }
     }
 
